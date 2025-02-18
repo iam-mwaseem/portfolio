@@ -26,11 +26,16 @@ export default function Header() {
             </li>
           </ul>
         </nav>
-        <div className={styles["header__dropdown"]}>
+        <div className={styles["header__dropdown"]} >
           <button
             className={`${styles.button} ${styles["header__button-lang"]}`}
+            style={{display:'flex', justifyContent:'space-between',alignItems:'center'}}
           >
+            <span style={{paddingLeft:'4px'}}>
+
             EN
+            </span>
+            
             <Image
               src={LangIcon}
               alt="languages"

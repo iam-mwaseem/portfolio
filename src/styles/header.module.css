@@ -48,8 +48,11 @@
     display: inline-block;
 }
 .header__button-lang {
+    
     width: 71px;
-    padding: 6px 32px 6px 8px;
+    /* padding: 6px 32px 6px 8px; */
+    padding: 6px;
+    /* width: 100%; */
     position: relative;
 }
 .button {
