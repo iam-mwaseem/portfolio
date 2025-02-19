@@ -1,0 +1,46 @@
+.main-title {
+    background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    
+    font-size: 50px;
+    /* margin: 200px 0 40px 0; */
+    background: linear-gradient(90deg, #f42a8b 0%, #1f89db 100%);
+    background-clip: text;
+    display: inline-block;
+    font-family: "Nunito Sans", sans-serif;
+}
+.loaded {
+}
+.main__text-block {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 120px;
+    margin: 0 auto;
+
+    /* border: 1px solid yellow; */
+    width: 85%;
+    transition: left 1sease-out, opacity 1sease-out;
+}
+.main-text {
+    width: 40%;
+    display: inline-block;
+    position: relative;
+    font-size: 24px;
+    line-height: 30px;
+    margin: 0 0 40px 0;
+    z-index: 16;
+}
+.button {
+    background: linear-gradient(90deg, #f42a8b 0%, #1f89db 100%);
+    color: #ffff;
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 16px;
+}
+.button a {
+    text-decoration: none;
+
+}
