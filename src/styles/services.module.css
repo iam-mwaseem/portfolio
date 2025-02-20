@@ -1,0 +1,36 @@
+.service_main-container {
+    position: relative;
+    top: 150px;
+    left: 104px;
+    width: 85%;
+}
+.subtitle {
+    font-size: 48px;
+    line-height: 52px;
+    font-weight: 400;
+    background: linear-gradient(90deg, #f42a8b 0%, #1f89db 100%);
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    margin: 0 0 100px 0;
+}
+.service-card-container{
+   
+    /* display: flex;
+    flex-direction: column; */
+    display: flex
+    ;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 80px;
+        flex-wrap: wrap;
+        opacity: 1;
+        transition: opacity 1sease-in-out;
+        margin: 0 0 65px 0;
+  /* background: #f42a8b; */
+    /* align-items: center; */
+    
+  
+}

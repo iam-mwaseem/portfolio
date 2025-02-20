@@ -4,6 +4,7 @@ import About from '@/components/About/about';
 import Portfolio from '@/components/Portfolio/portfolio'
 import Skill from '@/components/Skill/skill'
 import styles from '@/styles/header.module.css'
+import Service from '@/components/MyServices/myServices'
 export default function HomePage() {
   return <>
   <div className={styles['main-container']}>
@@ -13,6 +14,7 @@ export default function HomePage() {
     <About />
    <Portfolio />
    <Skill />
+   <Service />
   </div>
 
   </>;

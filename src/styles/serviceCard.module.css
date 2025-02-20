@@ -1,0 +1,25 @@
+.card-container {
+  width: 70%;
+  border: 1px solid black;
+  position: relative;
+    background: linear-gradient(45deg, rgb(20, 27, 42) 0%, rgb(14, 20, 30) 100%);
+    max-width: 730px;
+    border: 1px solid #414a5a;
+    border-radius: 20px;
+    padding: 40px 50px;
+}
+.card-subtitle {
+  position: relative;
+  bottom: 14px;
+  margin-left:10px;
+  
+}
+.card-container:first-child::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 80px;
+  bottom: -81px;
+  left: 75%;
+  background: #414a5a;
+}
