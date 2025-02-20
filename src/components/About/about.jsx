@@ -12,9 +12,10 @@ export default function About(){
             <button className={styles.button}>
            
 
-            <Link href='/portfolios'><span className={styles.button}>View my works</span></Link>
+            <Link href='/portfolios'><span className={styles.button}>VIEW MY WORKS</span></Link>
     
             </button>
+         
         </div>
     )
 }

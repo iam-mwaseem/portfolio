@@ -1,0 +1,42 @@
+.portfolio {
+    background-image: url(../../public//images/portfolio-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain !important;
+    border-top: 1px solid #414a5a;
+    padding: 130px 0 130px 0;
+
+    top: 140px;
+    /* border: 1px solid yellow; */
+    position: relative;
+    left: 104px;
+    width: 85%;
+    min-height: 100vh;
+   
+   
+
+   
+}
+
+.subtitle {
+    font-size: 48px;
+    line-height: 52px;
+    font-weight: 400;
+    background: linear-gradient(90deg, #f42a8b 0%, #1f89db 100%);
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    margin: 0 0 100px 0;
+}
+.project-container {
+   
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+        grid-template-rows: auto; /* Auto rows */
+        gap: 40px; /* Space between grid items */
+        justify-content: center;
+        align-items: start;
+        width: 100%;
+   
+}
