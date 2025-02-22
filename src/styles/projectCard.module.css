@@ -2,7 +2,7 @@
     /* width: 30%; */
     display: flex
 ;
-position: relative;
+/* position: relative; */
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -12,10 +12,10 @@ position: relative;
     border-radius: 20px;
     border: 1px solid #414a5a;
     background: linear-gradient(45deg, rgb(20, 27, 42) 0%, rgb(14, 20, 30) 100%);
-    opacity: 0;
+    /* opacity: 0;
     transform: translateX(-100%);
     transition: opacity 1s ease-out, transform 1s ease-out;
-    transition-delay: 2s;
+    transition-delay: 2s; */
 
 }
 .card-img {

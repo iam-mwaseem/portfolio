@@ -1,10 +1,12 @@
 .contact_main-container {
-    position: relative;
+    /* position: relative;
     top: 150px;
     left: 104px;
+    width: 85%; */
     width: 85%;
     display: flex;
     gap: 160px;
+    padding: 50px 0;
 }
 .contact-subtitle-gradient {
     max-width: 550px;

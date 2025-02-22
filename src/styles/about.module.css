@@ -14,14 +14,11 @@
 .loaded {
 }
 .main__text-block {
-    position: relative;
-    left: 0;
-    right: 0;
-    top: 120px;
     margin: 0 auto;
-
     /* border: 1px solid yellow; */
+    /* width: 85%; */
     width: 85%;
+    margin-top: 10%;
     transition: left 1sease-out, opacity 1sease-out;
 }
 .main-text {
