@@ -102,7 +102,7 @@ export default function Contact() {
               name='message'
               placeholder='Enter your message'
               className={style['contact-form-input']}
-              style={{height:"100px"}}
+              style={{height:"170px"}}
               value={formData.message}
               onChange={handleChange}
             />
