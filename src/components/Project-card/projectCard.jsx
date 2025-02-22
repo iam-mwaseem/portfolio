@@ -1,19 +1,19 @@
 import React from 'react'
 import Image from 'next/image'
 import LinkIcon from '../../../public/images/link-icon.svg'
-import card1 from '../../../public/images/card1.png'
+// import card1 from '../../../public/images/card1.png'
 import styles from '@/styles/projectCard.module.css'
 import Link from 'next/link'
-export default function projectCard() {
+export default function projectCard({srcImage , title , link}) {
   return (
     <>
    <div>
 
  
     <div className={styles['card-container']}>
-      <Image src={card1} alt='visit page' style={{width:'100%', height:'auto'}} className={styles['card-img']} />
-        <h3 className={styles['card-text']}>This project is developed in NextJS</h3>
-        <Link  href='/card-1' className={styles['card-link']}>
+      <Image src={srcImage} alt='visit page'  width={300} height={169} style={{width:'100%', height:'auto'}} className={styles['card-img']} layout='responsive' />
+        <h3 className={styles['card-text']}>{title}</h3>
+        <Link  href={link} className={styles['card-link']} target='_blank' rel='noopenernorederrer'>
             <Image src={LinkIcon} alt='visit project' />
         </Link>
     </div>

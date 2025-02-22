@@ -17,6 +17,8 @@ position: relative;
     transition: transform 1sease-out, opacity 1sease-out; */
 }
 .card-img {
+    width: 100%;
+    height: auto;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }

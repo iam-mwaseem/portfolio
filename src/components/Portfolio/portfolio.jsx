@@ -1,18 +1,20 @@
 import ProjectCard from '@/components/project-card/projectCard.jsx'
 import styles from '@/styles/portfolio.module.css'
+import projectData from '@/project-db'
 export default function Portfolio (){
     return(
         <section className={styles.portfolio}>
       
         <h1 className={styles.subtitle}>Portfolio</h1>
        
-       <div className={styles['project-container']}>
+       <div className={styles['project-container']} >
+        {
+            projectData.map((project )=> (
 
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
+                <ProjectCard key={project.id} srcImage={project.srcImage} title={project.title} link={project.link} />
+            ))
+        }
+       
        </div>
 
     
