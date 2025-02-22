@@ -62,7 +62,7 @@ export default function Contact() {
 
   return (
     <>
-    <section className={style['contact_main-container']} >
+    <section className={style['contact_main-container']} id='contacts' >
       <div>
         <h3 className={style['contact-subtitle-gradient']}>Do you have a project to discuss?</h3>
         <div className={style['contact__subtitle']}>

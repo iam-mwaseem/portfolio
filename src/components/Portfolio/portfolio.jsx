@@ -3,7 +3,7 @@ import styles from '@/styles/portfolio.module.css'
 import projectData from '@/project-db'
 export default function Portfolio (){
     return(
-        <section className={styles.portfolio}>
+        <section className={styles.portfolio} id='portfolio'>
       
         <h1 className={styles.subtitle}>Portfolio</h1>
        

@@ -7,6 +7,10 @@
     border: 1px solid #414a5a;
     border-radius: 20px;
     padding: 40px 50px;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    transition-delay: 2s;
 }
 .card-subtitle {
   position: relative;
@@ -22,4 +26,13 @@
   bottom: -81px;
   left: 75%;
   background: #414a5a;
+}
+.card-container.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.card-container.hidden {
+  opacity: 0;
+  transform: translateX(-100%);
 }

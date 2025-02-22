@@ -19,7 +19,7 @@ import tailwind from '../../../public/images/tailwind-icon.svg'
 export default function Skill (){
     return (
         <>
-        <section className={style['main-container']}>
+        <section className={style['main-container']} id='skills'>
             <h1 className={style.subtitle}>Skills</h1>
             <div className={style['skill-icon-container']}>
                 <p className={style['skills__content-subtitle']}>The skills, tools and technologies I use:</p>

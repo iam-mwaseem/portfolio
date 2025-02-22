@@ -13,16 +13,16 @@ export default function Header() {
         <nav className={styles["header-nav"]}>
           <ul className={styles["header-list"]}>
             <li >
-              <Link href="/" className={styles.link}>Portfolio</Link>
+              <Link href="#portfolio" className={styles.link}>Portfolio</Link>
             </li>
             <li>
-              <Link href="/technologies" className={styles.link}>Technologies</Link>
+              <Link href="#skills" className={styles.link}>Technologies</Link>
             </li>
             <li>
-              <Link href="/services" className={styles.link}>Services</Link>
+              <Link href="#services" className={styles.link}>Services</Link>
             </li>
             <li>
-              <Link href="/contacts" className={styles.link}>Contacts</Link>
+              <Link href="#contacts" className={styles.link}>Contacts</Link>
             </li>
           </ul>
         </nav>
