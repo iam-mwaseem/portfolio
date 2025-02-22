@@ -75,3 +75,9 @@
     width: 25%;
     margin-top: 30px;
 }
+.error{
+    position: relative;
+    bottom: 17px;
+    left: 14px;
+    color: red;
+}
