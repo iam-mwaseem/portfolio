@@ -36,17 +36,27 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (validate()) {
-      emailjs.send(
-        'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
-        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
-        formData,
-        'YOUR_USER_ID' // Replace with your EmailJS user ID
-      ).then((response) => {
-        console.log('SUCCESS!', response.status, response.text);
-      }, (error) => {
-        console.log('FAILED...', error);
+    if(formData.email !== 'dev.muhammad.waseem@gmail.com'){
+      if (validate()) {
+        emailjs.send(
+          'service_ru3opae', // Replace with your EmailJS service ID
+          'template_x1mtlfs', // Replace with your EmailJS template ID
+          formData,
+          '_QScm7TNWLAV3q_R0' // Replace with your EmailJS user ID
+        ).then((response) => {
+          console.log('SUCCESS!', response.status, response.text);
+           // Reset form fields
+      setFormData({
+        name: '',
+        email: '',
+        message: '',
+        agree: false
       });
+      setErrors({});
+        }, (error) => {
+          console.log('FAILED...', error);
+        });
+      }
     }
   };
 
