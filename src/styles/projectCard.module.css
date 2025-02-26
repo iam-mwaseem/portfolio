@@ -55,3 +55,11 @@
     opacity: 0;
     transform: translateX(-100%);
   }
+@media screen and (max-width:768px) {
+    .card-text{
+        font-size: 14px;
+    }
+    .card-link {
+        bottom: 10px;
+    }
+}

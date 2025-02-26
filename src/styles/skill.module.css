@@ -43,3 +43,16 @@
     align-self: center;
     gap: 50px;
 }
+@media only screen and (max-width:768px) {
+    .subtitle{
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .skills__content-subtitle{
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+    .skill-icon{
+        gap: 25px;
+    }
+}

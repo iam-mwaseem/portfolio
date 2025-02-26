@@ -36,3 +36,18 @@
   opacity: 0;
   transform: translateX(-100%);
 }
+@media screen and (max-width:768px) {
+
+  .card-container{
+    width: 100%;
+    padding: 0px;
+   
+  }
+  .card-container p{
+    font-size: 14px;
+    padding: 10px;
+  }
+  .card-subtitle{
+    font-size: 14px;
+  }
+}

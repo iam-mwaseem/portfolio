@@ -36,3 +36,21 @@
         width: 100%;
    
 }
+
+@media screen and (max-width:768px) {
+    .portfolio{
+        /* width: 95%; */
+        padding: 20px 0;
+        background: none;
+    }
+    .project-container{
+        display: flex
+;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+    .subtitle{
+        font-size: 24px;
+    }
+}
