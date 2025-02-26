@@ -46,6 +46,7 @@
   .card-container p{
     font-size: 14px;
     padding: 10px;
+    text-align: justify;
   }
   .card-subtitle{
     font-size: 14px;
