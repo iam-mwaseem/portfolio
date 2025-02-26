@@ -159,7 +159,7 @@
     /* Sidebar Navigation */
 .header-nav {
     position: fixed;
-    top: 48px;
+    top: 59px;
     left: -250px; /* Start off-screen */
     width: 250px; /* Sidebar width */
     height: 100vh;

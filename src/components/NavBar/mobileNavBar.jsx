@@ -27,22 +27,7 @@ export default function MobileNavBar() {
       <Link href="/" className={styles["header-link"]}>
         Muhammad Waseem
       </Link>
-      {/* {toggleList &&  <nav className={styles["header-nav"]}>
-      <ul className={styles["header-list"]}>
-        <li >
-          <Link href="#portfolio" className={styles.link}>Portfolio</Link>
-        </li>
-        <li>
-          <Link href="#skills" className={styles.link}>Technologies</Link>
-        </li>
-        <li>
-          <Link href="#services" className={styles.link}>Services</Link>
-        </li>
-        <li>
-          <Link href="#contacts" className={styles.link}>Contacts</Link>
-        </li>
-      </ul>
-    </nav>} */}
+  
       <nav
         className={`${styles["header-nav"]} ${toggleList ? styles.active : ""}`}
       >
