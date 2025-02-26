@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import emailjs from 'emailjs-com';
 import style from '@/styles/contact.module.css';
 import contactIcon from '../../../public/images/contact-icon.svg'
@@ -15,7 +15,16 @@ export default function Contact() {
   });
 
   const [errors, setErrors] = useState({});
+  const [isMobile, setIsMobile] = useState(typeof window !== "undefined" ? window.innerWidth < 768 : false);
+ 
+  useEffect(() => {
+      const handleResize = () => {
+          setIsMobile(window.innerWidth < 768);
+      };
 
+      window.addEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
+  }, []);
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     setFormData({
@@ -69,15 +78,7 @@ export default function Contact() {
           <Image src={contactIcon} alt='contact icon' / >
           <span style={{marginLeft:'12px'}}>Contact Me</span>
         </div>
-        <div className={style['contact-info']} >
-          <div>
-          <span className={style['contact-info-subtitle']}>Contact</span>
-          <span style={{display:'block',marginTop:"10px"}}>dev.muhammad.waseem@gmail.com</span>
-          </div>
-        </div>
-      </div>
-      {/* starting form  */}
-        <div className={style['contact-form-block']}>
+        {isMobile && (        <div className={style['contact-form-block']}>
           <span className={style['contact__subtitle']}>CONTACT FORM</span>
           <form className={style['contact-form-box']} onSubmit={handleSubmit}>
             <input
@@ -119,7 +120,59 @@ export default function Contact() {
             {errors.agree && <span className={style['error']} style={{marginTop:'20px'}}>{errors.agree}</span>}
             <button type='submit' className={style['send-btn']}>Send</button>
           </form>
+        </div>)}
+        <div className={style['contact-info']} >
+          <div style={isMobile && {marginTop:'5%'}}>
+          <span className={style['contact-info-subtitle']}>Contact</span>
+          <span style={{display:'block',marginTop:"10px"}}>dev.muhammad.waseem@gmail.com</span>
+          </div>
         </div>
+      </div>
+      {/* starting form  */}
+      {!isMobile && ( <div className={style['contact-form-block']}>
+          <span className={style['contact__subtitle']}>CONTACT FORM</span>
+          <form className={style['contact-form-box']} onSubmit={handleSubmit}>
+            <input
+              type='text'
+              name='name'
+              placeholder='Enter your name'
+              className={style['contact-form-input']}
+              value={formData.name}
+              onChange={handleChange}
+            />
+            {errors.name && <span className={style['error']}>{errors.name}</span>}
+            <input
+              type='text'
+              name='email'
+              placeholder='Enter your email'
+              className={style['contact-form-input']}
+              value={formData.email}
+              onChange={handleChange}
+            />
+            {errors.email && <span className={style['error']}>{errors.email}</span>}
+            <textarea
+              name='message'
+              placeholder='Enter your message'
+              className={style['contact-form-input']}
+              style={{height:"170px"}}
+              value={formData.message}
+              onChange={handleChange}
+            />
+            {errors.message && <span className={style['error']}>{errors.message}</span>}
+            <div>
+              <input
+                type='checkbox'
+                name='agree'
+                checked={formData.agree}
+                onChange={handleChange}
+              />
+              <span style={{ display: 'inline-block' }}>I agree to terms and conditions</span>
+            </div>
+            {errors.agree && <span className={style['error']} style={{marginTop:'20px'}}>{errors.agree}</span>}
+            <button type='submit' className={style['send-btn']}>Send</button>
+          </form>
+        </div>)}
+       
     </section>
     </>
   )

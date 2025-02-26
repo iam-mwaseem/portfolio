@@ -83,3 +83,12 @@
     left: 14px;
     color: red;
 }
+@media screen and (max-width:768px) {
+    .contact__subtitle {
+        font-size: 24px;
+    }
+    .contact-form-block {
+        width: 100%;
+    }
+    
+}
