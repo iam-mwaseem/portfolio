@@ -51,4 +51,7 @@
   .card-subtitle{
     font-size: 14px;
   }
+  .card-container:first-child::before{
+    left: 50%;
+  }
 }
