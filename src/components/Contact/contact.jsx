@@ -75,7 +75,7 @@ export default function Contact() {
       <div>
         <h3 className={style['contact-subtitle-gradient']}>Do you have a project to discuss?</h3>
         <div className={style['contact__subtitle']}>
-          <Image src={contactIcon} alt='contact icon' / >
+          <Image src={contactIcon} alt='contact icon'/>
           <span style={{marginLeft:'12px'}}>Contact Me</span>
         </div>
         {isMobile && (        <div className={style['contact-form-block']}>
@@ -122,7 +122,7 @@ export default function Contact() {
           </form>
         </div>)}
         <div className={style['contact-info']} >
-          <div style={isMobile && {marginTop:'5%'}}>
+          <div style={isMobile && {marginTop:'5%'} || {}}>
           <span className={style['contact-info-subtitle']}>Contact</span>
           <span style={{display:'block',marginTop:"10px"}}>dev.muhammad.waseem@gmail.com</span>
           </div>

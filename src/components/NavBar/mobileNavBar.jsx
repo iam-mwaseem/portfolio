@@ -2,8 +2,8 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import styles from "@/styles/header.module.css";
-import hamBurgerIcon from "../../../public/images/hamburger-icon.svg";
-import Image from "next/image";
+// import hamBurgerIcon from "../../../public/images/hamburger-icon.svg";
+// import Image from "next/image";
 export default function MobileNavBar() {
   const [toggleList, setToggleList] = useState(false);
   const handleOnClick = () => {
