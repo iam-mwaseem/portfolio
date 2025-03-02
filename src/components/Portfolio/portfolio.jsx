@@ -1,4 +1,4 @@
-import ProjectCard from '@/components/projectCard/projectCard'
+import ProjectCard from '@/components/ProjectCard/projectCard'
 import styles from '@/styles/portfolio.module.css'
 import projectData from '@/project-db'
 export default function Portfolio (){
