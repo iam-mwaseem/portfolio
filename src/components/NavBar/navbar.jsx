@@ -7,7 +7,8 @@ import Image from "next/image";
 import MobileNavBar from '@/components/NavBar/mobileNavBar'
 export default function NavBar() {
     const [isMobile, setIsMobile] = useState(typeof window !== "undefined" ? window.innerWidth < 768 : false);
- 
+
+    const [showDropDown,setShowDropDown] = useState(false);
     useEffect(() => {
         const handleResize = () => {
             setIsMobile(window.innerWidth < 768);
@@ -16,6 +17,9 @@ export default function NavBar() {
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
     }, []);
+    const showDropDownFn = () =>{
+      setShowDropDown((prevValue)=> !prevValue);
+    }
   return (
     <>
     {!isMobile ?  (<header className={`${styles.header} ${styles.container}`}>
@@ -39,10 +43,11 @@ export default function NavBar() {
         </li>
       </ul>
     </nav>
-    <div className={styles["header__dropdown"]} >
+    {/* <div className={styles["header__dropdown"]} >
       <button
         className={`${styles.button} ${styles["header__button-lang"]}`}
         style={{display:'flex', justifyContent:'space-between',alignItems:'center'}}
+        onClick={showDropDownFn}
       >
         <span style={{paddingLeft:'4px'}}>
 
@@ -58,7 +63,7 @@ export default function NavBar() {
 
       <ul
         id="polylang-languages"
-        className={styles["header__dropdown-list"]}
+        className={showDropDown ? `${styles['drop_down_display']} ${styles["header__dropdown-list"]}`:''}
       >
         <li >
           <a
@@ -120,7 +125,7 @@ export default function NavBar() {
           </a>
         </li>
       </ul>
-    </div>
+    </div> */}
   </header>):<MobileNavBar /> }
   </>
   )

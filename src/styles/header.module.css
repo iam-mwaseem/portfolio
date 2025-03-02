@@ -82,6 +82,13 @@
 #polylang-languages {
     display: none;
 }
+.drop_down_display {
+    display: flex
+;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .header__dropdown-list {
     position: absolute;
     display: none;

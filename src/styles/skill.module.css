@@ -15,7 +15,8 @@
     background-clip: text;
     color: transparent;
     display: inline-block;
-    margin: 0 0 100px 0;
+    /* margin: 0 0 100px 0; */
+    padding: 20px 0 90px 0;
 }
 .skill-icon-container{
     width: 100%;
@@ -47,6 +48,7 @@
     .subtitle{
         font-size: 24px;
         margin-bottom: 10px;
+        padding: 0;
     }
     .skills__content-subtitle{
         font-size: 14px;
