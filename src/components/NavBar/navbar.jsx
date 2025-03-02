@@ -2,13 +2,13 @@
 import React, {useState,useEffect} from 'react'
 import Link from "next/link";
 import styles from "@/styles/header.module.css";
-import LangIcon from "../../../public/images/icon-lang.svg";
-import Image from "next/image";
+// import LangIcon from "../../../public/images/icon-lang.svg";
+// import Image from "next/image";
 import MobileNavBar from '@/components/NavBar/mobileNavBar'
 export default function NavBar() {
     const [isMobile, setIsMobile] = useState(typeof window !== "undefined" ? window.innerWidth < 768 : false);
 
-    const [showDropDown,setShowDropDown] = useState(false);
+    // const [showDropDown,setShowDropDown] = useState(false);
     useEffect(() => {
         const handleResize = () => {
             setIsMobile(window.innerWidth < 768);
@@ -17,9 +17,9 @@ export default function NavBar() {
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
     }, []);
-    const showDropDownFn = () =>{
-      setShowDropDown((prevValue)=> !prevValue);
-    }
+    // const showDropDownFn = () =>{
+    //   setShowDropDown((prevValue)=> !prevValue);
+    // }
   return (
     <>
     {!isMobile ?  (<header className={`${styles.header} ${styles.container}`}>
