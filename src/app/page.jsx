@@ -14,6 +14,7 @@ export default function HomePage() {
   
 
     <About />
+    <div className={styles.divider}/>
    <Portfolio />
    <Skill />
    <Service />

@@ -67,6 +67,11 @@
     /* width: 100%; */
     position: relative;
 }
+.divider {
+    border-top: 1px solid #414a5a !important;
+    margin: 20px 0;
+    width: 100%;
+  }
 .button {
     color: #fff;
     text-transform: uppercase;
